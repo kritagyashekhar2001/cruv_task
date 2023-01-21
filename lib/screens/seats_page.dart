@@ -70,7 +70,7 @@ class _SeatsPageState extends State<SeatsPage> {
                 crossAxisSpacing: height * 0.01,
                 mainAxisSpacing: width * 0.05,
               ),
-              itemCount: 36,
+              itemCount: 40,
               itemBuilder: (BuildContext ctx, index) {
                 return BlocConsumer<SeatsFinderBloc, SeatsFinderState>(
                   listener: (context, state) {

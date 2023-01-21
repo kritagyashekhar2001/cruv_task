@@ -9,7 +9,7 @@ class SeatsFinderBloc extends Bloc<SeatsFinderEvent, SeatsFinderState> {
     on<NumberEntered>((event, emit) {
       if (event.index == 0) {
         emit(const NumberOutOfRange("Please enter a valid seat number."));
-      } else if (event.index > 36) {
+      } else if (event.index > 40) {
         emit (const NumberOutOfRange("Please enter seat number less than 36."));
       } else {
         emit(NumberColored(event.index - 1));
